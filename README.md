@@ -12,6 +12,8 @@
 
 ### 🏠 [Homepage](https://sticker-board.vercel.app)
 
+<img alt="Demo Gif" src="https://i.imgur.com/FTKPa5Y.gif" />
+
 ## Install
 
 ```sh
