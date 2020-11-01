@@ -11,14 +11,10 @@ export default {
 
     const boardRepository = getRepository(Board);
 
-    const board = await boardRepository.findOne({
+    const board = await boardRepository.findOneOrFail({
       where: [{ board_code: id }],
       relations: ["notes"],
     });
-
-    if (!board) {
-      return response.status(404).json({ message: "Page not found" });
-    }
 
     const re = /(\/\/line-break)/g;
 
